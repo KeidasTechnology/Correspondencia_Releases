@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="Correspondencia.exe" version="1.0.0.0" publicKeyToken="e6f47a4590d392b0" language="neutral" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="Correspondencia.exe" version="1.0.0.0" publicKeyToken="dd713b4b4b7fbd35" language="neutral" processorArchitecture="msil" type="win32" />
   <description asmv2:iconFile="Logo-del-programa.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
@@ -10,22 +10,22 @@
   <trustInfo>
     <security>
       <applicationRequestMinimum>
-        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
         <defaultAssemblyRequest permissionSetReference="Custom" />
       </applicationRequestMinimum>
       <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
-        <!--
-          Opciones del manifiesto de Control de cuentas de usuario
-          Si quiere cambiar el nivel de Control de cuentas de usuario de Windows, reemplace el
-          nodo requestedExecutionLevel por alguno de los siguientes.
+        <!-- Opciones del manifiesto UAC
+             Si quiere cambiar el nivel del Control de cuentas de usuario de Windows reemplace el 
+             nodo requestedExecutionLevel por uno de los siguientes.
 
         <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
         <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
         <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
 
-         Si desea usar la virtualización de archivos y del Registro para la
-         compatibilidad con versiones anteriores, elimine el nodo requestedExecutionLevel.
-    -->
+            Especificar el elemento requestedExecutionLevel deshabilitará la virtualización de archivos y registros. 
+            Quite este elemento si la aplicación necesita esta virtualización para la compatibilidad
+            con versiones anteriores.
+        -->
         <requestedExecutionLevel level="asInvoker" uiAccess="false" />
       </requestedPrivileges>
     </security>
@@ -49,20 +49,20 @@
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>YYNevxaEJyl9ERZ948hxuKRoewU=</dsig:DigestValue>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>SmKhguYHlrqW96dOGpzQTb+LE0YZtIyxCTMra4dsiKg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Correspondencia.exe" size="1453024">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Correspondencia.exe" size="1454048">
       <assemblyIdentity name="Correspondencia" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>C6qfww2qOTrtQomPpjrSaYOr4jE=</dsig:DigestValue>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>K8h3LfOI/iG9zM/iP9X54SqUYgBhZYAG1DSm4EmgIt0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -73,8 +73,8 @@
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>QzymNGHeYRnKN+apH1pKmt0Ksmw=</dsig:DigestValue>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>cITeQF+xoWh8T9+7N5RYxEb5KhhDBAValzrERx/YYy8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -85,18 +85,18 @@
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>louROCBjNcyBAgegwgoNzvKILv4=</dsig:DigestValue>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>xi5Tv36UGiYrWxghFoO9BFtwlZ9Z3cy05FTbGO44CDM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="Correspondencia.exe.config" size="199">
+  <file name="Correspondencia.exe.config" size="184">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>GppnRcd+1cjh7BZx3bL16S8kPdA=</dsig:DigestValue>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>FqWy0dfMmRS85zkU1NlW07p6LsNOPUHodvLiZcFdgJY=</dsig:DigestValue>
     </hash>
   </file>
   <file name="doc.docx" size="229326">
@@ -104,8 +104,8 @@
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>4oz/zYTZhL+7RZbHM+/BkAGbleQ=</dsig:DigestValue>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>4zKde86+HctGMMb61ljy/WuNQjFikOHXmfyXPzrP/+A=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Icono.ico" size="104837">
@@ -113,8 +113,8 @@
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>ch9kVGDYJCFFXWRhpZrwPOaZRxU=</dsig:DigestValue>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>P0QrjG6q6tXurfi/lDW63QZJM7H3CnG63GdIanJ8a/Y=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Logo-del-programa.ico" size="165662">
@@ -122,8 +122,25 @@
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>G+vEi5ZtHLiEI3mqVwZdebhJJq8=</dsig:DigestValue>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>lCHzrezC4U28a07VXwICqmza5JHzlBxCQLwuekmG+qw=</dsig:DigestValue>
     </hash>
   </file>
-<publisherIdentity name="CN=DESKTOP-C2E6B85\ccda1" issuerKeyHash="e5210b688ee27cd14a32953d9bc9baad23ff170e" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>gJzFXxnzEartn53oS9CFVMP02Wk=</DigestValue></Reference></SignedInfo><SignatureValue>PfzXhIWoTotUdGKbdUjLR+TI5LzGLFhnRMMU8b5jvLbNKwpoDsFkJgaFz44aCeOq4YsLgUtOQ1dIN6lapJiUogwoeJGdNH4DUhMvrkD7LJNQZYkO29lx46lHJ8S8gPGl1kdhLB2ciziv1hpWhspGs1OLo0PxeulE853rKNnObcM=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>yDkYIx7PpsiIT6pHpHW+sk8Mll+myRH/jN/Tao3mrSd8Qf16+/KOAFi2sH9M0lyOY008m1s9l3S6wgkqqKz+OjMsjchs/laUxq1RGd7QAJe+0mTrdwJivP50jUkRlJeTkd7w0Pa1M1FedYMi2aRRsSqEcZQuqx7XQcW8INBpdME=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="69d9f4c35485d04be89d9fedaa11f3195fc59c80" Description="" Url=""><as:assemblyIdentity name="Correspondencia.exe" version="1.0.0.0" publicKeyToken="e6f47a4590d392b0" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-C2E6B85\ccda1</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>mccl/Ha5NAOy/KcYIQ+IQfnklMY=</DigestValue></Reference></SignedInfo><SignatureValue>Wb4umNrUfxeEmZ6Sw90HVitzTjppQ46SDFH57Ho4TeCo3YHzLQh0LF2d/ZmtyEaN22RwG5feZVs2NG84J/MYKbYMnyBVSf9Ix09NIgNb6NC6msoK2PWFFlyoewHezk97jkzXN809qp4zEus63cz3hf8Ra1V5L6D8UzhNfZKh/J0=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>yDkYIx7PpsiIT6pHpHW+sk8Mll+myRH/jN/Tao3mrSd8Qf16+/KOAFi2sH9M0lyOY008m1s9l3S6wgkqqKz+OjMsjchs/laUxq1RGd7QAJe+0mTrdwJivP50jUkRlJeTkd7w0Pa1M1FedYMi2aRRsSqEcZQuqx7XQcW8INBpdME=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQK/xC9Dxx75JOpeZvbTKn8zANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAEMAMgBFADYAQgA4ADUAXABjAGMAZABhADEwHhcNMjAwMzAzMjMwMTUyWhcNMjEwMzA0MDUwMTUyWjA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAEMAMgBFADYAQgA4ADUAXABjAGMAZABhADEwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMg5GCMez6bIiE+qR6R1vrJPDJZfpskR/4zf02qN5q0nfEH9evvyjgBYtrB/TNJcjmNNPJtbPZd0usIJKqis/jozLI3IbP5WlMatURne0ACXvtJk63cCYrz+dI1JEZSXk5He8ND2tTNRXnWDItmkUbEqhHGULqse10HFvCDQaXTBAgMBAAEwDQYJKoZIhvcNAQELBQADgYEASa9vjrnEUrhigeLL1wwd91Iy2xbwVjx7h8qSUK4xkUzTQF+GvSzFnQzqe89BHjieVzoKB8g5DqFL6SAbQuJmYzP+R/1Uq8ExLM5DPzcfLNuITybzxEFfQNpJeiYv3q4RBVOuzLOLtmdT6x86uKd/Sgv5dcxqrrK8g1kc+gnu1p8=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- Una lista de las versiones de Windows en la que se ha probado esta aplicación y
+           con la que se ha diseñado para que trabaje. Quite la marca de comentario de los elementos adecuados y Windows seleccionará 
+           automáticamente el entorno más compatible. -->
+      <!-- Windows Vista -->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}" />-->
+      <!-- Windows 7 -->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}" />-->
+      <!-- Windows 8 -->
+      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}" />-->
+      <!-- Windows 8.1 -->
+      <!--<supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}" />-->
+      <!-- Windows 10 -->
+      <!--<supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=DESKTOP-C2E6B85\ccda1" issuerKeyHash="915a9f763e8c05dbe49cdaf2b0d8ff2384afb04f" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>afX/YN5UqnVe1vhj/GESBzJ3PY8IzPdADSd5zNswmn0=</DigestValue></Reference></SignedInfo><SignatureValue>h1sRyOTcjLufWn1qRX/Jc5SJPYI6vCl9ej9JRLvusO3QlhpwGE240UPhgMo9frO8LUm7wJ2MCpSoCqhC6oaqHlhXzbiA2gALjUk4tL42UqjKuAYk657wc3rOb6+J5nvWSiYjiG6pe37oOEgNrtCzgcKGFdBAuxPg1Kxdxa7deEY=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>tJgDm6ISjQZcpEGWc63fZ/fIo3idgNDsW8w9XX1L22HtvvzMez+49eZ1POY7RRll/RiNMYDV6nTy1Yh23/ip4CHN4AzHHQgQdF6OFPdeNxBwUNWRQ+EbgrAWjOwKO2LJZytk4rKyENO+uCdWGvHxZHclPAVBSxd3djSSTyLwAQU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="7d9a30dbcc79270d40f7cc088f3d7732071261fc63f8d65e75aa54de60fff569" Description="" Url=""><as:assemblyIdentity name="Correspondencia.exe" version="1.0.0.0" publicKeyToken="dd713b4b4b7fbd35" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-C2E6B85\ccda1</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>4QxGpKVssZJ9P3TRngzwtkYwMHQHgxXf82Yu8G55kdI=</DigestValue></Reference></SignedInfo><SignatureValue>XQQC9VWeKAII8VCE0teasdBRXNEorsjnK+VTZyy4KSTC0httSS/TRpxaMKRHGPr8AfFq+Aex44+O/zPCGEnDIA7hW5u4i+Uh1sPF3tBhs9us2r8Fa9tSqFtHNbi5vMZIvJp38GQ7NP1h54uxqVvB25CLVhctz2KE9RpUDP/2Y2k=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>tJgDm6ISjQZcpEGWc63fZ/fIo3idgNDsW8w9XX1L22HtvvzMez+49eZ1POY7RRll/RiNMYDV6nTy1Yh23/ip4CHN4AzHHQgQdF6OFPdeNxBwUNWRQ+EbgrAWjOwKO2LJZytk4rKyENO+uCdWGvHxZHclPAVBSxd3djSSTyLwAQU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQO60O1Qgn9blFe74vaCpJwjANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAEMAMgBFADYAQgA4ADUAXABjAGMAZABhADEwHhcNMjAwMzA0MDQ0MjE1WhcNMjEwMzA0MTA0MjE1WjA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAEMAMgBFADYAQgA4ADUAXABjAGMAZABhADEwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALSYA5uiEo0GXKRBlnOt32f3yKN4nYDQ7FvMPV19S9th7b78zHs/uPXmdTzmO0UZZf0YjTGA1ep08tWIdt/4qeAhzeAMxx0IEHRejhT3XjcQcFDVkUPhG4KwFozsCjtiyWcrZOKyshDTvrgnVhrx8WR3JTwFQUsXd3Y0kk8i8AEFAgMBAAEwDQYJKoZIhvcNAQELBQADgYEASlYuEOYND2JQZsDtOL3fieY5ao3WZvGgXAlWXqfzrdJatdlCZiSTtbfzL2hNFV+/cpo0Ry+WUwO7Yf9qdnk6p0+K8mNOl7Xi4A7MlHkSoza6E9skFaVjBKhaq5rOzgNEGqiXM66f1Fursy0uZAclmMIPETJH88aq1JJ4y0jllT0=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
